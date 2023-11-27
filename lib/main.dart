@@ -1,4 +1,7 @@
 
+import 'package:UTS_Kelompok5/note/notes.dart';
+import 'package:UTS_Kelompok5/note/users.dart';
+
 import 'firstpage.dart';
 import 'workout/tab_button.dart';
 import 'package:flutter/material.dart';

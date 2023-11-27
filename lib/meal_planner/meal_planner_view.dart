@@ -21,19 +21,19 @@ class MealPlannerView extends StatefulWidget {
 class _MealPlannerViewState extends State<MealPlannerView> {
   List todayMealArr = [
     {
-      "name": "Sushi",
-      "image": "assets/img/sushis.png",
-      "time": "13/06/2023 07:00 AM",
+      "name": "Breakfast",
+      "image": "assets/img/morning.png",
+      "time": "28/11/2023 07:00 AM",
     },
     {
-      "name": "Turkey",
-      "image": "assets/img/turkey.png",
-      "time": "13/06/2023 12:00 PM"
+      "name": "Lunch",
+      "image": "assets/img/afternoon.png",
+      "time": "28/11/2023 12:00 PM"
     },
     {
-      "name": "Spaghetti",
-      "image": "assets/img/spaghetti.png",
-      "time": "13/06/2023 07:00 PM"
+      "name": "Dinner",
+      "image": "assets/img/night.png",
+      "time": "28/11/2023 07:00 PM"
     },
   ];
 
@@ -124,47 +124,12 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Meals for Today",
+                        "What's For Today ?",
                         style: TextStyle(
                             color: TColor.white,
                             fontSize: 16,
                             fontWeight: FontWeight.w700),
                       ),
-                      Container(
-                          height: 30,
-                          padding: const EdgeInsets.symmetric(horizontal: 8),
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(colors: TColor.tealteal),
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                          child: DropdownButtonHideUnderline(
-                            child: DropdownButton(
-                              items: [
-                                "Breakfast",
-                                "Lunch",
-                                "Dinner",
-                                "Snack",
-                              ]
-                                  .map((name) => DropdownMenuItem(
-                                value: name,
-                                child: Text(
-                                  name,
-                                  style: TextStyle(
-                                      color: TColor.gray, fontSize: 14),
-                                ),
-                              ))
-                                  .toList(),
-                              onChanged: (value) {},
-                              icon:
-                              Icon(Icons.expand_more, color: TColor.white),
-                              hint: Text(
-                                "Breakfast",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: TColor.white, fontSize: 12),
-                              ),
-                            ),
-                          )),
                     ],
                   ),
                   SizedBox(

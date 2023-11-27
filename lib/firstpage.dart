@@ -1,3 +1,4 @@
+import 'package:UTS_Kelompok5/login/signup_view.dart';
 import 'package:flutter/material.dart';
 import 'calories.dart';
 
@@ -23,7 +24,7 @@ class FirstPage extends StatelessWidget {
                 ),),
             ),
             ElevatedButton.icon(onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => const Calories()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const SignUpView()));
             },
               icon: Icon(Icons.play_arrow),
               label: Text('Leggo!'),
