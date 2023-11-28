@@ -70,6 +70,17 @@ class _CaloriesState extends State<Calories> {
         },
         items: [
           IconButton(
+            icon: Icon(Icons.favorite),
+            color: Colors.white,
+            onPressed: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => Calories()))
+                  .then((value) {
+                setState(() {});
+              });
+            },
+          ),
+          IconButton(
             icon: Icon(Icons.restaurant_rounded, color: Colors.white),
             color: Colors.white,
             onPressed: () {
@@ -81,17 +92,6 @@ class _CaloriesState extends State<Calories> {
             },
           ),
 
-          IconButton(
-            icon: Icon(Icons.favorite),
-            color: Colors.white,
-            onPressed: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => Calories()))
-                  .then((value) {
-                setState(() {});
-              });
-            },
-          ),
       IconButton(
         icon: Icon(Icons.fitness_center_rounded),
         color: Colors.white,
