@@ -271,7 +271,7 @@ class _SignUpViewState extends State<SignUpView> {
                           context,
                           MaterialPageRoute(
                               builder: (context) =>
-                              const CompleteProfileView()));
+                              const LoginView()));
                         });
                         }
                 }),

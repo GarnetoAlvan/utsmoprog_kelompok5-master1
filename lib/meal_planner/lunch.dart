@@ -169,69 +169,6 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsViewLunch> {
                         blurRadius: 2,
                         offset: Offset(0, 1))
                   ]),
-              child: Row(
-                children: [
-                  Expanded(
-                      child: TextField(
-                        controller: txtSearch,
-                        decoration: InputDecoration(
-                            focusedBorder: InputBorder.none,
-                            enabledBorder: InputBorder.none,
-                            prefixIcon: Image.asset(
-                              "assets/img/search.png",
-                              width: 25,
-                              height: 25,
-                            ),
-                            hintText: "What Would You Like To Eat?"),
-                      )),
-                  Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 8),
-                    width: 1,
-                    height: 25,
-                    color: TColor.gray.withOpacity(0.3),
-                  ),
-                  InkWell(
-                    onTap: () {},
-                    child: Image.asset(
-                      "assets/img/Filter.png",
-                      width: 25,
-                      height: 25,
-                    ),
-                  )
-                ],
-              ),
-            ),
-            SizedBox(
-              height: media.width * 0.05,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Choose from selection",
-                    style: TextStyle(
-                        color: TColor.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w700),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 120,
-              child: ListView.builder(
-                  padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                  scrollDirection: Axis.horizontal,
-                  itemCount: categoryArr.length,
-                  itemBuilder: (context, index) {
-                    var cObj = categoryArr[index] as Map? ?? {};
-                    return MealCategoryCell(
-                      cObj: cObj,
-                      index: index,
-                    );
-                  }),
             ),
             SizedBox(
               height: media.width * 0.05,
@@ -239,7 +176,7 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsViewLunch> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: Text(
-                "Recommendation\nfor Diet",
+                "Recommendation",
                 style: TextStyle(
                     color: TColor.white,
                     fontSize: 16,

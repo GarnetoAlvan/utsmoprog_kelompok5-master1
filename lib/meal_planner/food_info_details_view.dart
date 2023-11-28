@@ -20,9 +20,6 @@ class FoodInfoDetailsView extends StatefulWidget {
 class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
   List nutritionArr = [
     {"image": "assets/img/burn.png"},
-    {"image": "assets/img/egg.png"},
-    {"image": "assets/img/proteins.png"},
-    {"image": "assets/img/carbo.png"},
   ];
 
   List stepArr = [
